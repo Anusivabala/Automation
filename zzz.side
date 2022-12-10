@@ -1,0 +1,191 @@
+{
+  "id": "056f0953-7f12-4f31-b39d-374a8f6915c0",
+  "version": "2.0",
+  "name": "zzz",
+  "url": "http://www.google.com",
+  "tests": [{
+    "id": "39d83789-83f0-4007-a658-12376b0839ef",
+    "name": "t1",
+    "commands": [{
+      "id": "cc67f2cc-23ff-42b4-b17b-8efa80ab80a8",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.google.com/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d6682c09-36f0-4355-825b-dc28ca9f33e7",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1059x817",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "3ff52785-fe87-45e6-9c5b-da1a37c4a64b",
+      "comment": "",
+      "command": "type",
+      "target": "name=q",
+      "targets": [
+        ["name=q", "name"],
+        ["css=.gLFyf", "css:finder"],
+        ["xpath=//input[@name='q']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "greedale"
+    }, {
+      "id": "99e58d51-a0cd-47b3-8255-ee8922a8dc67",
+      "comment": "",
+      "command": "click",
+      "target": "css=.WggQGd b",
+      "targets": [
+        ["css=.WggQGd b", "css:finder"],
+        ["xpath=//b", "xpath:position"],
+        ["xpath=//b[contains(.,'greendale apartments')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "9904cda9-bcf9-452e-8570-f7faa98ebc08",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "8a2c07b6-514a-4bf3-b85b-e7325a83674a",
+    "name": "t2",
+    "commands": [{
+      "id": "b294e2d2-cc98-4fc6-a2fa-0c6a3be38df0",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.google.com/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "81c2ab54-63c5-4b7a-a494-9f813d07fa7d",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1059x817",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "02321fde-de47-408b-b345-2ea9f2395d10",
+      "comment": "",
+      "command": "type",
+      "target": "name=q",
+      "targets": [
+        ["name=q", "name"],
+        ["css=.gLFyf", "css:finder"],
+        ["xpath=//input[@name='q']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "port"
+    }, {
+      "id": "4647d6cc-36a7-47ec-b6a7-93154fc21540",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//div[2]/div[2]/span",
+      "targets": [
+        ["css=.sbhl .ClJ9Yb > span", "css:finder"],
+        ["xpath=//div[2]/div[2]/span", "xpath:position"],
+        ["xpath=//span[contains(.,'School · Sunnyvale, CA')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "d7245c39-7a51-4eb2-9210-d6cf4758b522",
+      "comment": "",
+      "command": "mouseDownAt",
+      "target": "id=result-stats",
+      "targets": [
+        ["id=result-stats", "id"],
+        ["css=#result-stats", "css:finder"],
+        ["xpath=//div[@id='result-stats']", "xpath:attributes"],
+        ["xpath=//div[@id='slim_appbar']/div/div", "xpath:idRelative"],
+        ["xpath=//div/div[7]/div/div/div/div/div", "xpath:position"]
+      ],
+      "value": "94,17"
+    }, {
+      "id": "f7aa14ea-27ed-4873-adf1-f423610ff989",
+      "comment": "",
+      "command": "mouseMoveAt",
+      "target": "id=result-stats",
+      "targets": [
+        ["id=result-stats", "id"],
+        ["css=#result-stats", "css:finder"],
+        ["xpath=//div[@id='result-stats']", "xpath:attributes"],
+        ["xpath=//div[@id='slim_appbar']/div/div", "xpath:idRelative"],
+        ["xpath=//div/div[7]/div/div/div/div/div", "xpath:position"]
+      ],
+      "value": "94,17"
+    }, {
+      "id": "f485dd37-a8cf-4cb1-8ab3-a685fd6101ce",
+      "comment": "",
+      "command": "mouseUpAt",
+      "target": "id=result-stats",
+      "targets": [
+        ["id=result-stats", "id"],
+        ["css=#result-stats", "css:finder"],
+        ["xpath=//div[@id='result-stats']", "xpath:attributes"],
+        ["xpath=//div[@id='slim_appbar']/div/div", "xpath:idRelative"],
+        ["xpath=//div/div[7]/div/div/div/div/div", "xpath:position"]
+      ],
+      "value": "94,17"
+    }, {
+      "id": "c4f01d65-b654-41a1-a426-95ef2301dff4",
+      "comment": "",
+      "command": "click",
+      "target": "id=result-stats",
+      "targets": [
+        ["id=result-stats", "id"],
+        ["css=#result-stats", "css:finder"],
+        ["xpath=//div[@id='result-stats']", "xpath:attributes"],
+        ["xpath=//div[@id='slim_appbar']/div/div", "xpath:idRelative"],
+        ["xpath=//div/div[7]/div/div/div/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5b513dd9-74dc-46e9-b1c0-d78f5cf82a6a",
+      "comment": "",
+      "command": "click",
+      "target": "id=result-stats",
+      "targets": [
+        ["id=result-stats", "id"],
+        ["css=#result-stats", "css:finder"],
+        ["xpath=//div[@id='result-stats']", "xpath:attributes"],
+        ["xpath=//div[@id='slim_appbar']/div/div", "xpath:idRelative"],
+        ["xpath=//div/div[7]/div/div/div/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b2addcfa-337e-4b45-ab41-eeac40f54800",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "id=result-stats",
+      "targets": [
+        ["id=result-stats", "id"],
+        ["css=#result-stats", "css:finder"],
+        ["xpath=//div[@id='result-stats']", "xpath:attributes"],
+        ["xpath=//div[@id='slim_appbar']/div/div", "xpath:idRelative"],
+        ["xpath=//div/div[7]/div/div/div/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2f9592ca-ff11-46dc-903c-e5dfb9c2bac1",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "1b8bb88b-3388-4360-a08f-868242552fa1",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["39d83789-83f0-4007-a658-12376b0839ef"]
+  }],
+  "urls": ["http://www.google.com/"],
+  "plugins": []
+}

@@ -1,0 +1,136 @@
+{
+  "id": "07a2efdc-d4f2-4258-8282-8858fc770960",
+  "version": "2.0",
+  "name": "hallmark",
+  "url": "https://www.hallmark.com/",
+  "tests": [{
+    "id": "35ad250f-bc11-4bb7-a4dc-a41577e56ab9",
+    "name": "hallmarktest1",
+    "commands": [{
+      "id": "b4e18c2c-dc81-42f5-89ab-233659563879",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.hallmark.com/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "85bbec67-d32d-4fe0-8167-7ec7cee4bbaa",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "550x711",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "1b72f364-67ab-433a-8480-aca6cec1b66b",
+      "comment": "",
+      "command": "storeTitle",
+      "target": "",
+      "targets": [],
+      "value": "windowtitle"
+    }, {
+      "id": "59c54c6e-687f-4954-b3cf-5ee6b16a9f18",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,0)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "4382bc52-57e1-4f76-af34-1b77c9b34708",
+      "comment": "",
+      "command": "click",
+      "target": "id=search-input",
+      "targets": [
+        ["id=search-input", "id"],
+        ["name=q", "name"],
+        ["css=#search-input", "css:finder"],
+        ["xpath=//input[@id='search-input']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8bf5cd9f-e2cf-46e7-8fa2-4d9bb7203922",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//body",
+      "targets": [
+        ["css=.js-homepage", "css:finder"],
+        ["xpath=//body", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4ab4a95d-4c3b-4b39-877d-8d7c93070e19",
+      "comment": "",
+      "command": "type",
+      "target": "id=search-input",
+      "targets": [
+        ["id=search-input", "id"],
+        ["name=q", "name"],
+        ["css=#search-input", "css:finder"],
+        ["xpath=//input[@id='search-input']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "greeting cards"
+    }, {
+      "id": "bb256d04-5e6c-4f40-9f15-7fd2230fa532",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//p",
+      "targets": [
+        ["css=.media-card-content-container:nth-child(2) .editorial-1:nth-child(1)", "css:finder"],
+        ["xpath=//section[@id='global-banner']/div/div/div/div[2]/div/div/p", "xpath:idRelative"],
+        ["xpath=//p", "xpath:position"],
+        ["xpath=//p[contains(.,'Free Shipping on $20+ with Crown Rewards. ')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "9fb2f04d-4741-4fbf-a852-0b7ab7d577e4",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.editorial-1 > a:nth-child(1)",
+      "targets": [
+        ["css=.editorial-1 > a:nth-child(1)", "css:finder"],
+        ["xpath=(//a[contains(text(),'Sign in')])[3]", "xpath:link"],
+        ["xpath=//section[@id='global-banner']/div/div/div/div[2]/div/div/p[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://account.hallmark.com/?icid=gb_bp_ma_fs_cr_members_free_shipping_notsignedinsignin#/signin?URL=https%3A%2F%2Fwww.hallmark.com%2Fcards%2F%3Fsearchkey%3Dgreeting%2520cards%26searchterm%3Dgreeting%2520cards%26oq%3Dgreeting')]", "xpath:href"],
+        ["xpath=//p[2]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "97072e05-a04b-4d81-a454-bd663deef196",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.media-card-content-container:nth-child(2) .editorial-1:nth-child(1)",
+      "targets": [
+        ["css=.media-card-content-container:nth-child(2) .editorial-1:nth-child(1)", "css:finder"],
+        ["xpath=//section[@id='global-banner']/div/div/div/div[2]/div/div/p", "xpath:idRelative"],
+        ["xpath=//p", "xpath:position"],
+        ["xpath=//p[contains(.,'Free Shipping on $20+ with Crown Rewards. ')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "7765f20c-31e8-40d6-92f2-7b7cf5882ef1",
+      "comment": "",
+      "command": "echo",
+      "target": "${windowtitle}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d8387444-1dd2-413a-a1fd-22b647fc4835",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "e43b9cdf-4c7c-419d-b70a-fa6aeca576a2",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["35ad250f-bc11-4bb7-a4dc-a41577e56ab9"]
+  }],
+  "urls": ["https://www.hallmark.com/"],
+  "plugins": []
+}

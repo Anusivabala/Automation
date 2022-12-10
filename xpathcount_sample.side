@@ -1,0 +1,49 @@
+{
+  "id": "04f715d0-3f3e-4b9a-aa7d-70e020284d58",
+  "version": "2.0",
+  "name": "xpathcount_sample",
+  "url": "https://ui.vision/docs/selenium-ide/storexpathcount",
+  "tests": [{
+    "id": "ace318f9-e02c-4c32-bd2c-12a0658d680c",
+    "name": "uivision_count",
+    "commands": [{
+      "id": "8202db4b-e1cb-4f94-9442-064796334c4c",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "30d812be-cb2b-46ed-8011-547a53529d73",
+      "comment": "",
+      "command": "storeXpathCount",
+      "target": "xpath=//a",
+      "targets": [],
+      "value": "count"
+    }, {
+      "id": "adc02607-95ef-4289-b245-6482c653feb5",
+      "comment": "",
+      "command": "echo",
+      "target": "no of links:${count}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "04e2d44d-9a8b-454a-883c-862950d51ec8",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "b3dc0a41-46bb-4b20-ae6e-f0c2a56d125d",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["ace318f9-e02c-4c32-bd2c-12a0658d680c"]
+  }],
+  "urls": ["https://ui.vision/docs/selenium-ide/storexpathcount"],
+  "plugins": []
+}

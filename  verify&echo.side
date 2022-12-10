@@ -1,0 +1,295 @@
+{
+  "id": "d9ca8b20-2bc3-4b25-bce6-3acbac42593f",
+  "version": "2.0",
+  "name": "verify",
+  "url": "https://www.google.com/",
+  "tests": [{
+    "id": "b1522676-d277-4dd6-9242-f6bd9be1c7b5",
+    "name": "verify",
+    "commands": [{
+      "id": "02a51ce4-797e-46fc-8b94-0c07cac899e0",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.google.com/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "82c1cdaf-393d-4bc3-9a97-079a5b6511e6",
+      "comment": "",
+      "command": "storeTitle",
+      "target": "",
+      "targets": [],
+      "value": "windowtitle"
+    }, {
+      "id": "9b9690d2-2ebb-4cb6-9639-9fe8dd720320",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "833x733",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "0e107c2f-8eed-42ed-91db-b9999e6e70ee",
+      "comment": "",
+      "command": "type",
+      "target": "name=q",
+      "targets": [
+        ["name=q", "name"],
+        ["css=.gLFyf", "css:finder"],
+        ["xpath=//input[@name='q']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "portnov computer school"
+    }, {
+      "id": "e3e5f506-c2d2-479b-8e4d-65238e4ab975",
+      "comment": "",
+      "command": "",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "7ca9d428-9f82-44ff-ab2d-33b49b00c063",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "name=q",
+      "targets": [
+        ["name=q", "name"],
+        ["css=.gLFyf", "css:finder"],
+        ["xpath=//input[@name='q']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "b877b76c-062b-4a24-be2a-cd9a179903aa",
+      "comment": "",
+      "command": "echo",
+      "target": "${windowtitle}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f81a6bbe-11da-43c5-ab40-80cccc901c80",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "9b10b1ee-3ecd-43cb-aacd-748bc4a8176c",
+    "name": "verifyandusage",
+    "commands": [{
+      "id": "cb2721c7-d062-45e2-a669-140774e99c42",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.google.com/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a73a0da8-b145-4e12-b774-35fa7ec26ebb",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "833x733",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "615bb211-d4b4-4eb3-8e62-c6242a98703f",
+      "comment": "",
+      "command": "type",
+      "target": "name=q",
+      "targets": [
+        ["name=q", "name"],
+        ["css=.gLFyf", "css:finder"],
+        ["xpath=//input[@name='q']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "portnov computer school"
+    }, {
+      "id": "b5cb27ad-fd2f-477b-a8e1-cf6ac01c21cd",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "name=q",
+      "targets": [
+        ["name=q", "name"],
+        ["css=.gLFyf", "css:finder"],
+        ["xpath=//input[@name='q']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "2f254000-b7d8-49ca-9fbc-0440263ebf0d",
+      "comment": "",
+      "command": "click",
+      "target": "id=result-stats",
+      "targets": [
+        ["id=result-stats", "id"],
+        ["css=#result-stats", "css:finder"],
+        ["xpath=//div[@id='result-stats']", "xpath:attributes"],
+        ["xpath=//div[@id='slim_appbar']/div/div", "xpath:idRelative"],
+        ["xpath=//div[7]/div/div/div/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3d88b091-b450-464a-bf9a-b4e33ace7b98",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "id=result-stats",
+      "targets": [
+        ["id=result-stats", "id"],
+        ["css=#result-stats", "css:finder"],
+        ["xpath=//div[@id='result-stats']", "xpath:attributes"],
+        ["xpath=//div[@id='slim_appbar']/div/div", "xpath:idRelative"],
+        ["xpath=//div[7]/div/div/div/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3e83843b-44ca-48a8-84a3-124eead2dada",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.Tg7LZd",
+      "targets": [
+        ["css=.Tg7LZd", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//form[@id='tsf']/div/div/div[2]/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c7b483a7-a260-4249-98de-e94bacff6d46",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "c1d46b76-03e6-4274-be57-10ce8a50de98",
+    "name": "verifyandusage1",
+    "commands": [{
+      "id": "6bfb66d0-8f36-4810-9ed9-604c677a3350",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.google.com/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "cdba1b7b-0801-4e13-a585-8be64efdd3c2",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "710x733",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "96e54045-6418-4631-94e8-71dc3605aa1f",
+      "comment": "",
+      "command": "type",
+      "target": "name=q",
+      "targets": [
+        ["name=q", "name"],
+        ["css=.gLFyf", "css:finder"],
+        ["xpath=//input[@name='q']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "portnov computer school"
+    }, {
+      "id": "138b6723-759c-4836-b669-2542953f20f9",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "name=q",
+      "targets": [
+        ["name=q", "name"],
+        ["css=.gLFyf", "css:finder"],
+        ["xpath=//input[@name='q']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "f40453cd-1ca3-4be6-89c6-714bdd4b1cc1",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.tF2Cxc > .yuRUbf > a > .TbwUpd",
+      "targets": [
+        ["css=.tF2Cxc > .yuRUbf > a > .TbwUpd", "css:finder"],
+        ["xpath=//div[@id='rso']/div/div/div/div/div/div/div/div/a/div", "xpath:idRelative"],
+        ["xpath=//div/div/div/div/div/div/div/div/a/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f13cf195-6c2c-405d-b594-902145d11230",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "css=.tF2Cxc > .yuRUbf > a > .TbwUpd",
+      "targets": [
+        ["css=.tF2Cxc > .yuRUbf > a > .TbwUpd", "css:finder"],
+        ["xpath=//div[@id='rso']/div/div/div/div/div/div/div/div/a/div", "xpath:idRelative"],
+        ["xpath=//div/div/div/div/div/div/div/div/a/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f32ca773-02e1-4fd9-b7a6-e4ca793d4c12",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.tF2Cxc > .yuRUbf .LC20lb",
+      "targets": [
+        ["css=.tF2Cxc > .yuRUbf .LC20lb", "css:finder"],
+        ["xpath=//div[@id='rso']/div/div/div/div/div/div/div/div/a/h3", "xpath:idRelative"],
+        ["xpath=//h3", "xpath:position"],
+        ["xpath=//h3[contains(.,'Portnov Computer School: Home')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "32abb3b7-f7f3-4810-a234-6798ba822254",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "css=.tF2Cxc > .yuRUbf .LC20lb",
+      "targets": [
+        ["css=.tF2Cxc > .yuRUbf .LC20lb", "css:finder"],
+        ["xpath=//div[@id='rso']/div/div/div/div/div/div/div/div/a/h3", "xpath:idRelative"],
+        ["xpath=//h3", "xpath:position"],
+        ["xpath=//h3[contains(.,'Portnov Computer School: Home')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "d5547953-b212-4b77-8039-0b305ebbedcf",
+      "comment": "",
+      "command": "click",
+      "target": "id=result-stats",
+      "targets": [
+        ["id=result-stats", "id"],
+        ["css=#result-stats", "css:finder"],
+        ["xpath=//div[@id='result-stats']", "xpath:attributes"],
+        ["xpath=//div[@id='slim_appbar']/div/div", "xpath:idRelative"],
+        ["xpath=//div[7]/div/div/div/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a01f61c0-6e45-4350-9f7b-bba02e0ff10f",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "id=result-stats",
+      "targets": [
+        ["id=result-stats", "id"],
+        ["css=#result-stats", "css:finder"],
+        ["xpath=//div[@id='result-stats']", "xpath:attributes"],
+        ["xpath=//div[@id='slim_appbar']/div/div", "xpath:idRelative"],
+        ["xpath=//div[7]/div/div/div/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "47769d61-57c6-4ae3-a93e-6f545a0c0ed6",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "ec91579a-7a45-4bb2-8af6-c2a6566bca1a",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["b1522676-d277-4dd6-9242-f6bd9be1c7b5"]
+  }],
+  "urls": ["https://www.google.com/"],
+  "plugins": []
+}

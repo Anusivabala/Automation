@@ -1,0 +1,131 @@
+{
+  "id": "190907fa-34f8-4181-a0bc-25421557904a",
+  "version": "2.0",
+  "name": "facebooklogin",
+  "url": "https://www.facebook.com/?stype=lo&jlou=AfdU3FYwrwuorRALGiYBd-qBACWsWuw2gdFk6ZTuDHncCLWVULzM-Ue4x7YcGPWog-Z1woXo7QkUq5GpvIhSrYpJMIvLhrAgDEW9jOSVcilwxQ&smuh=14969&lh=Ac8Ct2bohp8aRsrRFis",
+  "tests": [{
+    "id": "c78f155e-07e9-4d7d-afdc-404be5bd1933",
+    "name": "loginpage",
+    "commands": [{
+      "id": "dc1b4775-fd65-49ca-9f57-859796c5b16f",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.facebook.com/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a5421581-3dec-4a8c-a2eb-dfb6a6dab7b0",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "628x714",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "599e0626-869e-48be-afef-64c87fb04a65",
+      "comment": "",
+      "command": "type",
+      "target": "id=email",
+      "targets": [
+        ["id=email", "id"],
+        ["name=email", "name"],
+        ["css=#email", "css:finder"],
+        ["xpath=//input[@id='email']", "xpath:attributes"],
+        ["xpath=//form[@id='u_0_2_SP']/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": "${Mailid}"
+    }, {
+      "id": "b197f1df-d66c-4828-8256-b332ae4e657b",
+      "comment": "",
+      "command": "click",
+      "target": "id=pass",
+      "targets": [
+        ["id=pass", "id"],
+        ["name=pass", "name"],
+        ["css=#pass", "css:finder"],
+        ["xpath=//input[@id='pass']", "xpath:attributes"],
+        ["xpath=//div[@id='passContainer']/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b7a8fd89-3088-4847-8b3d-f2f50c66796a",
+      "comment": "",
+      "command": "type",
+      "target": "id=pass",
+      "targets": [
+        ["id=pass", "id"],
+        ["name=pass", "name"],
+        ["css=#pass", "css:finder"],
+        ["xpath=//input[@id='pass']", "xpath:attributes"],
+        ["xpath=//div[@id='passContainer']/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": "${Password}"
+    }, {
+      "id": "43d0f76b-e2ea-4a56-9f79-ecce3fd764ae",
+      "comment": "",
+      "command": "click",
+      "target": "id=u_0_9_Lk",
+      "targets": [
+        ["id=u_0_9_Lk", "id"],
+        ["name=login", "name"],
+        ["css=#u_0_9_Lk", "css:finder"],
+        ["xpath=//button[@id='u_0_9_Lk']", "xpath:attributes"],
+        ["xpath=//form[@id='u_0_6_5u']/div[2]/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Log in')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "486da562-5244-4067-a0bb-9a8312be19b4",
+      "comment": "",
+      "command": "assertText",
+      "target": "",
+      "targets": [],
+      "value": "Anusha Siva Bala Murugan"
+    }, {
+      "id": "44b3555f-0139-4739-9bfe-67533b0aca41",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "1f705d67-1fe6-4dd6-881b-e0e69bd57a1b",
+    "name": "logincrend",
+    "commands": [{
+      "id": "ea8fad92-ee58-4995-ba12-b37a03922c1e",
+      "comment": "",
+      "command": "store",
+      "target": "anu.sivabala@gmail.com",
+      "targets": [],
+      "value": "Mailid"
+    }, {
+      "id": "57d23dca-151a-44c7-a6ea-e120e54a50ef",
+      "comment": "",
+      "command": "store",
+      "target": "harini123",
+      "targets": [],
+      "value": "Password"
+    }, {
+      "id": "b735103a-4ac1-4bf4-8b3b-ecc581341c1b",
+      "comment": "",
+      "command": "run",
+      "target": "loginpage",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "a0d1b095-835b-4814-85c9-47af5fbc8740",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["c78f155e-07e9-4d7d-afdc-404be5bd1933"]
+  }],
+  "urls": ["https://www.facebook.com/", "https://www.facebook.com/?stype=lo&jlou=AfdU3FYwrwuorRALGiYBd-qBACWsWuw2gdFk6ZTuDHncCLWVULzM-Ue4x7YcGPWog-Z1woXo7QkUq5GpvIhSrYpJMIvLhrAgDEW9jOSVcilwxQ&smuh=14969&lh=Ac8Ct2bohp8aRsrRFis"],
+  "plugins": []
+}
